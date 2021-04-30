@@ -1,0 +1,68 @@
+{
+  "title": "Amazon crawler",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+      "country": {
+          "title": "Amazon market",
+          "type": "string",
+          "description": "Select your Amazon domain",
+          "editor": "select",
+          "default": "US",
+          "enum": [
+              "US",
+              "UK",
+              "DE",
+              "ES",
+              "FR",
+              "IT",
+              "IN",
+              "CA",
+              "JP",
+              "AE",
+              "SA",
+              "BR",
+              "MX",
+              "SG",
+              "TR",
+              "NL",
+              "AU"
+          ],
+          "enumTitles": [
+              "amazon.com",
+              "amazon.co.uk",
+              "amazon.de",
+              "amazon.es",
+              "amazon.fr",
+              "amazon.it",
+              "amazon.in",
+              "amazon.ca",
+              "amazon.co.jp",
+              "amazon.ae",
+              "amazon.sa",
+              "amazon.com.br",
+              "amazon.com.mx",
+              "amazon.sg",
+              "amazon.com.tr",
+              "amazon.nl",
+              "amazon.com.au"
+          ]
+      },
+      "search": {
+          "title": "Urls",
+          "type": "string",
+          "description": "Urls you would like to extract from Amazon, comma separated",
+          "prefill": "https://www.amazon.com/Baby-Care-Play-Mat-Collection/dp/B01MT6LSM8/ref=psdc_196609011_t1_B01MY709TZ?th=1",
+          "editor": "textarea"
+      },
+      "proxy": {
+        "title": "Proxy configuration",
+        "type": "object",
+        "description": "Select proxies to be used by your crawler.",
+        "prefill": { "useApifyProxy": true ,"apifyProxyGroups": [
+            "SHADER"
+          ]},
+        "editor": "proxy"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+	"name": "amazon-crawler-test",
+	"version": "0.1",
+	"buildTag": "latest",
+	"template": "Cheerio_Crawler",
+	"env":null
+}
